@@ -16,7 +16,7 @@ class Soultion{
             String uid = arr[1];
 
 
-            if(cmd.equals("Enter")||cmd.equals("Change")){
+            if(arr.length>2){
                 user.put(uid, arr[2]);
             }
             if(cmd.equals("Enter")||cmd.equals("Leave")){
@@ -33,9 +33,9 @@ class Soultion{
             String name = user.get(ids.get(i));
             str.append(name);
             if(commands.get(i).equals("Enter")){
-                str.append(" 님이 들어왔습니다.");
+                str.append("님이 들어왔습니다.");
             }else{
-                str.append(" 님이 나갔습니다.");
+                str.append("님이 나갔습니다.");
             }
             answer[i] = str.toString();
         }
