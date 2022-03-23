@@ -13,7 +13,6 @@ class Solution {
                 nums[i][j]=num++;
             }
         }
-        int idx = 0;
         for(int i=0; i< queries.length; i++){
             answer[i] = rotate(queries[i]);
         }
